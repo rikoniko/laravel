@@ -16,6 +16,7 @@
                         <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
                     </h2>
                 </div>
+                
             @endforeach
         </div>
         <div class='paginate'>
