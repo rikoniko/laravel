@@ -17,4 +17,7 @@ Route::get('/', 'PostController@index');
 Route::get('/posts/create', 'PostController@create');
 /*ブログ作成で保存ボタンが押された時のルーティング*/
 Route::post('/posts', 'PostController@store');
+Route::get('/posts/{post}/edit', 'PostController@edit');
+Route::put('/posts/{post}', 'PostController@update');
+
 Route::get('/posts/{post}', 'PostController@show');
